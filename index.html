@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jackie's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">     
+    <link rel="stylesheet" href="styles-grid.css">
+    <script src="scripts-gallery.js"></script> 
+  </head>
+  <body>
+
+ <!-- Side navigation -->
+ <div class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="main">
+    <h1>Highlights</h1>
+        <ul>
+          <li>An analytical service professional with over 15 years experience of finding solutions, researching problems, assisting internal and external clients</li>
+          <li>Over 13 years of experience in developing and delivering training/instruction materials</li>
+          <li>Over 7 years as the subject matter expertise for internal and external teams, as well as business partners</li>
+          <li>Over 7 years of project experience</li>
+        </ul>
+        <h1>Selected Achievements</h1>
+        <ul>
+          <li>Responsible for creating, maintaining and posting over 250 training documents & resource materials to internal website</li>
+          <li>Winner of Operations First award for an innovation idea</li>
+          <li>Shining Star award for work on a mapping project and multiple Spot awards</li>          
+        </ul>
+  </div> 
+
+
+
+<div class="footer">
+  <p>Copyright © 2021</p>
+</div>
+
+
+ </body>
+
+ <script>
+  const name = prompt ("What's your name?")
+
+  const date = new Date()
+  const hour = date.getHours()
+
+  let greeting;
+
+  if (hour >= 5 && hour < 12) {
+    greeting = `Good Morning,`
+  } else if (hour >= 12 && hour < 18) {
+    greeting = `Good Afternoon,`
+  } else {
+    greeting = `Good Evening,`
+  }
+
+  alert(`${greeting} ${name}! Thank you for reviewing my resume site.`)
+</script>
+
+</html>
